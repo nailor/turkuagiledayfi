@@ -5,6 +5,7 @@ admin.autodiscover()
 
 urlpatterns = patterns(
     '',
+    (r'^admin/filebrowser/', include('filebrowser.urls')),
     (r'^admin/(.*)', admin.site.root),
     (r'.*/$', view_page),
 )
