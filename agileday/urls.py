@@ -6,6 +6,7 @@ admin.autodiscover()
 urlpatterns = patterns(
     '',
     (r'^admin/(.*)', admin.site.root),
+    (r'.*/$', view_page),
 )
 
 if settings.DEBUG:
