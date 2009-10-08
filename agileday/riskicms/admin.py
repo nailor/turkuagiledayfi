@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 from django.conf import settings
 from django import forms
 from django.utils.translation import ugettext as _
-from asteriski_site.riskicms.models import Page
+from agileday.riskicms.models import Page
 
 class PageAdminForm(forms.ModelForm):
     class Meta:

@@ -2,7 +2,7 @@ from django.http import Http404
 from django.shortcuts import render_to_response
 from django.template import RequestContext
 
-from asteriski_site.riskicms.models import Page
+from agileday.riskicms.models import Page
 
 def traverse_for_page(path, manager):
     segments = path.split('/')
