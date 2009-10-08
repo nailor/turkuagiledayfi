@@ -1,0 +1,43 @@
+* {
+  font-family: sans
+}
+#header, #menu, #footer {
+  text-align: center;
+}
+#header h2 {
+  margin: 0;
+  font-weight: normal;
+}
+#menu li {
+  display: inline-block;
+}
+
+#menu {
+  border-bottom: 1px solid #444;
+}
+#content {
+  margin-left: 10%;
+}
+#footer {
+  border-top: 1px solid #444;
+}
+
+#footer img {
+  border: 0;
+}
+
+#footer div {
+  display: inline-block;
+}
+#footer span {
+  display:block;
+  font-weight:bold;
+  margin-bottom:4px;
+}
+.footerbox {
+  vertical-align: top;
+  margin-top: 10px;
+}
+.footerbox ul {
+  text-align: left;
+}

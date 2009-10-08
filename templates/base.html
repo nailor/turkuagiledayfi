@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}/css/style.css">
+    {% block extrahead %}{% endblock %}
+  </head>
+  <body>
+    <div id="header">
+      <h1>Turku Agile Day</h1>
+      <h2>agile software development conference</h2>
+      <h2>17th - 18th March 2010</h2>
+    </div>
+    <div id="menu">
+      <ul>
+        <li><a href="/" title="Home">Home</a></li>
+        <li><a href="/conference/" title="Conference info">Conference</a></li>
+        <li><a href="/past/" title="Past conferences">Past</a></li>
+        <li><a href="/sponsors/" title="Sponsors">Sponsors</a></li>
+        <li><a href="/register/" title="Register">Register</a></li>
+      </ul>
+    </div>
+    <div id="content">
+      {% block content %}{% endblock %}
+    </div>
+    <div id="footer">
+      <div id="contact-info" class="footerbox">
+        <span>Contact information</span>
+        <ul>
+          <li><a href="mailto:info@turkuagileday.fi">info@turkuagileday.fi</a></li>
+          <li>Aki Salmi, phone: +358 50 4821595</li>
+        </ul>
+      </div>
+
+      <div id="utulogo" class="footerbox">
+        <a href="http://www.utu.fi"><img src="http://www.turkuagileday.fi/utulogo.png" alt="University of Turku"></a>
+      </div>
+
+      <div id="organizers" class="footerbox">
+        <span>Organizers</span>
+        <ul>
+          <li><a href="http://www.it.utu.fi">Department of Information Technology</a></li>
+          <li><a href="http://www.asteriski.fi">Asteriski ry</a></li>
+          <li><a href="http://www.digit.fi">Digit ry</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
+
