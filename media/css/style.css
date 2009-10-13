@@ -110,7 +110,7 @@ h4 {
 	color: #595959;
 }
 
-
+/* FOOTER */
 
 #footer {
   width: 740px;
@@ -155,4 +155,55 @@ h4 {
 
 .footerbox ul li {
 	margin-left: -35px;
+}
+
+/* TABLE */
+table {
+	margin-top: 20px;
+	width: 100%;
+	border-spacing: 5px;
+}
+
+th {
+	padding: 5px;
+	font-size: 12px;
+	font-weight: bold;
+	background-color: #001b24;
+	color: #fff;
+}
+
+
+td {
+	color: #001b24;
+	padding: 5px;
+	background-color: #DDDEDE;
+
+	-moz-border-radius: 10px 0 10px 0;
+	-webkit-border-radius: 10px 0 10px 0;
+	border-radius: 10px; /* future proofing */
+	-khtml-border-radius: 10px; /* for old Konqueror browsers */
+
+}
+
+ .break {
+	border: 0;
+	text-align: center;
+	font-weight: bold;
+
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px; /* future proofing */
+	-khtml-border-radius: 0px; /* for old Konqueror browsers */
+}
+
+ .time {
+	text-align: right;
+	background-color: #f5f7f8;
+	vertical-align: top;
+}
+
+.social {
+	background-color: #f4bc19;
+	text-align: center;
+	font-weight: bold;
 }
