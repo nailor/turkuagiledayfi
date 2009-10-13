@@ -1,7 +1,7 @@
 from __future__ import with_statement
 import errno
 
-DEBUG = False
+DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
@@ -68,6 +68,7 @@ MIDDLEWARE_CLASSES = (
 )
 
 ROOT_URLCONF = 'agileday.urls'
+FORCE_SCRIPT_NAME = ''
 
 TEMPLATE_DIRS = (
     '/srv/turkuagileday.fi/www/templates/',
