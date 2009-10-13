@@ -1,4 +1,4 @@
-from django.http import Http404
+from django.http import Http404, HttpResponsePermanentRedirect
 from django.shortcuts import render_to_response
 from django.template import RequestContext
 
@@ -39,6 +39,8 @@ def view_page(request):
             page = manager.get(slug='__root')
         except Page.DoesNotExist:
             raise Http404
+    elif not request.path[-1] == '/':
+        return HttpResponsePermanentRedirect(request.path + '/')
     else:
         page = traverse_for_page(
             request.path,
