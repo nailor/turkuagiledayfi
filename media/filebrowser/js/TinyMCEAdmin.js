@@ -35,13 +35,13 @@ tinyMCE.init({
     theme_advanced_toolbar_align: "left",
     theme_advanced_statusbar_location: "none",
     theme_advanced_buttons1: "formatselect,bold,italic,underline,bullist,numlist,undo,redo,link,unlink,image,code,fullscreen,pasteword,media,charmap",
-    theme_advanced_buttons2: "",
+    theme_advanced_buttons2: "tablecontrols",
     theme_advanced_buttons3: "",
     theme_advanced_path: false,
     theme_advanced_blockformats: "p,h2,h3,h4,h5,h6",
     width: '700',
     height: '200',
-    plugins: "advimage,advlink,fullscreen,visualchars,paste,media,template,searchreplace",
+    plugins: "advimage,advlink,fullscreen,visualchars,paste,media,template,searchreplace,table",
     advimage_styles: "Linksbündig neben Text=img_left;Rechtsbündig neben Text=img_right;Eigener Block=img_block",
     advlink_styles: "internal (sehmaschine.net)=internal;external (link to an external site)=external",
     advimage_update_dimensions_onchange: true,
@@ -61,7 +61,11 @@ tinyMCE.init({
     "-h2,-h3,-h4," + 
     "-pre," +
     "-code," + 
-    "-div",
+    "-div," +
+    "-table," +
+    "-tr," +
+    "-td," +
+    "-th",
     extended_valid_elements: "" + 
     "a[name|class|href|target|title|onclick]," + 
     "img[class|src|border=0|alt|title|hspace|vspace|width|height|align|onmouseover|onmouseout|name]," + 
@@ -69,7 +73,11 @@ tinyMCE.init({
     "-p[class<clearfix?summary?code]," + 
     "h2[class<clearfix],h3[class<clearfix],h4[class<clearfix]," + 
     "ul[class<clearfix],ol[class<clearfix]," + 
-    "div[class],"
+    "div[class]," +
+    "table[class|align|bgcolor|border|cellpadding|cellspacing|frame|rules|summary|width]," +
+    "tr[class|align|bgcolor|char|charoff|valign]," +
+    "td[class|abbr|align|axis|bgcolor|char|charoff|colspan|headers|height|nowrap|rowspan|scope|valign|width]," +
+    "span[class]"
 });
 
 
