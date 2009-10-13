@@ -75,6 +75,7 @@ tinyMCE.init({
     "ul[class<clearfix],ol[class<clearfix]," + 
     "div[class]," +
     "table[class|align|bgcolor|border|cellpadding|cellspacing|frame|rules|summary|width]," +
+    "th[class|align|bgcolor|char|charoff|valign]," +
     "tr[class|align|bgcolor|char|charoff|valign]," +
     "td[class|abbr|align|axis|bgcolor|char|charoff|colspan|headers|height|nowrap|rowspan|scope|valign|width]," +
     "span[class]"
