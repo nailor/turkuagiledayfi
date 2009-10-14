@@ -22,4 +22,5 @@ class NewsItem(models.Model):
     published = NewsManager()
 
     def __unicode__(self):
-        return '%s (%s)' % (self.title, self.publish_date)
+        return '%s' % self.title
+
