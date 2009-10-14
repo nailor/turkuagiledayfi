@@ -13,9 +13,12 @@ urlpatterns = patterns(
     '',
     (r'^admin/filebrowser/', include('filebrowser.urls')),
     (r'^admin/(.*)', admin.site.root),
+    (r'^news/$', 'agileday.news.views.archive'),
+    (r'^news/([0-9]+)/$', 'agileday.news.views.display_item'),
     (r'^feeds/(?P<url>.*)/$',
      'django.contrib.syndication.views.feed',
      {'feed_dict': feeds}),
+    (r'^favicon\.ico$', 'django.views.generic.simple.redirect_to', {'url': '/media/favicon.ico'}),
     (r'', 'agileday.riskicms.views.view_page'),
 )
 

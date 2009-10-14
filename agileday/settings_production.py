@@ -1,7 +1,7 @@
 from __future__ import with_statement
 import errno
 
-DEBUG = True
+DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
