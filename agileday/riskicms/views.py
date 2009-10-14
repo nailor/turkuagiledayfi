@@ -3,6 +3,7 @@ from django.shortcuts import render_to_response
 from django.template import RequestContext
 
 from agileday.riskicms.models import Page
+from agileday.news.models import NewsItem
 
 def traverse_for_page(path, manager):
     segments = path.split('/')
@@ -33,10 +34,13 @@ def view_page(request):
     else:
         manager = Page.online_pages
 
+    extra_context = {}
+
     if request.path == '/':
         # root page
         try:
             page = manager.get(slug='__root')
+            extra_context['news'] = NewsItem.published.all()[:5]
         except Page.DoesNotExist:
             raise Http404
     elif not request.path[-1] == '/':
@@ -47,10 +51,10 @@ def view_page(request):
             manager=manager,
             )
 
+    extra_context.update({'page': page,})
+
     return render_to_response(
         page.template,
-        {
-            'page': page,
-            },
+        extra_context,
         context_instance=RequestContext(request)
         )
