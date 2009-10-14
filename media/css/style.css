@@ -10,6 +10,8 @@ body {
 	background-color: #001b24;
 }
 
+/* HEADER */
+
 #header {
 	background: url(../layout_img/header_bg.png) repeat-x bottom;
 	height: 240px;
@@ -28,6 +30,8 @@ body {
 #header h1, #header h2 {
 	text-indent: -9999px;
 }
+
+/* MENU */
 
 #menu {
   width: 960px;
@@ -61,6 +65,8 @@ body {
 	text-shadow: 0px 0px 3px #000;
 }
 
+/* CONTENT */
+
 #container {
 	margin-top: -2px;
 	width: 100%;
@@ -84,12 +90,53 @@ body {
 	border: 0;
 }
 
+#introduction {
+	float: right;
+	width: 280px;
+	background-color: #EAEBEC;
+	padding: 5px 15px 10px 15px;
+	margin-top: 10px;
+	margin-left: 25px;
+	border: 1px solid #dddede;
+
+	-moz-border-radius: 10px 0 10px 0;
+	-webkit-border-radius: 10px 0 10px 0;
+	border-radius: 10px 0 10px 0; /* future proofing */
+	-khtml-border-radius: 10px 0 10px 0; /* for old Konqueror browsers */
+}
+
+.news_item {
+	margin: 0 0 25px 0;
+
+}
+
+.news_item h3 {
+	
+}
+
+.news_writer {
+	background-color: #eaebec;
+	margin: 16px 8px -10px 0;
+	font-size: 9px;
+	float: left;
+	padding: 5px 8px 5px 8px;
+	color: #001b24;
+	
+	-moz-border-radius: 5px 0 5px 0;
+	-webkit-border-radius: 5px 0 5px 0;
+	border-radius: 5px 0 5px 0; /* future proofing */
+	-khtml-border-radius: 5px 0 5px 0; /* for old Konqueror browsers */
+}
+
+/* TEXT */
+
 h2 {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 24px;
 	margin-top: 18px;
 	margin-bottom: -2px;
 	color: #001b24;
+	line-height: 28px;
 }
 
 h3 {
@@ -98,7 +145,7 @@ h3 {
 	margin-top: 18px;
 	margin-bottom: -6px;
 	color: #595959;
-	
+	line-height: 18px;
 }
 
 h4 {
@@ -170,6 +217,10 @@ th {
 	font-weight: bold;
 	background-color: #001b24;
 	color: #fff;
+	-moz-border-radius: 10px 10px 0 0;
+	-webkit-border-radius: 10px 10px 0 0;
+	border-radius: 10px 10px 0 0; /* future proofing */
+	-khtml-border-radius: 10px 10px 0 0; /* for old Konqueror browsers */
 }
 
 
@@ -180,8 +231,8 @@ td {
 
 	-moz-border-radius: 10px 0 10px 0;
 	-webkit-border-radius: 10px 0 10px 0;
-	border-radius: 10px; /* future proofing */
-	-khtml-border-radius: 10px; /* for old Konqueror browsers */
+	border-radius: 10px 0 10px 0; /* future proofing */
+	-khtml-border-radius: 10px 0 10px 0; /* for old Konqueror browsers */
 
 }
 
@@ -189,6 +240,7 @@ td {
 	border: 0;
 	text-align: center;
 	font-weight: bold;
+	background-color: #EAEBEC;
 
 	-moz-border-radius: 0px;
 	-webkit-border-radius: 0px;
@@ -206,4 +258,8 @@ td {
 	background-color: #f4bc19;
 	text-align: center;
 	font-weight: bold;
+}
+
+#content .social a, #content .social a:visited, #content .social a:hover {
+	color: #001b24;
 }
