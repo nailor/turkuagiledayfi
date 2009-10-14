@@ -3,6 +3,8 @@
   <head>
     <title>{% block title %}{% endblock %}</title>
     <link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}/css/style.css">
+    <link rel="alternate" type="application/rss+xml"
+          title="Turku Agile Day - News" href="/feeds/news/">
     <!--[if IE7]> <style> #menu { margin-top: -30px; } </style> <![EndIf]-->
     <link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon">
     {% block extrahead %}{% endblock %}
