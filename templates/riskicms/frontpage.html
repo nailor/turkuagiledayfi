@@ -3,6 +3,7 @@
 <div id="introduction">
   {{ page.content|safe }}
 </div>
+<h1>Latest news</h1>
 {% for item in news %}
 <div class="news_item">
   <h3><a href="/news/{{ item.id }}/">{{ item.title }}</a></h3>
@@ -10,4 +11,5 @@
   {{ item.body|safe }}
 </div>
 {% endfor %}
+<p>For more older news, check our <a href="/news/">news archive</a>.</p>
 {% endblock %}
