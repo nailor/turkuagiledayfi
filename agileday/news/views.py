@@ -5,7 +5,7 @@ from agileday.news.models import NewsItem
 def display_item(request, itemid):
     newsitem = get_object_or_404(NewsItem, pk=itemid)
     return render_to_response(
-        'news/archive.html',
+        'news/detail.html',
         {'news': [newsitem]},
         context_instance=RequestContext(request)
         )

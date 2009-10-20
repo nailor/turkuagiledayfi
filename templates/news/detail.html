@@ -1,0 +1,11 @@
+{% extends "riskicms/default.html" %}
+{% block title %}News archive{% endblock %}
+{% block content %}
+{% for item in news %}
+<div class="news_item">
+  <h3><a href="/news/{{ item.id }}/">{{ item.title }}</a></h3>
+  <p class="news_writer">{{ item.publish_date }} by {{ item.author.first_name }}</p>
+  {{ item.body|safe }}
+</div>
+{% endfor %}
+{% endblock %}
