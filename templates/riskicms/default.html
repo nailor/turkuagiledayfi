@@ -8,6 +8,7 @@
 {% if nav.children %}
 <div id="submenu">
   <ul>
+    <li><a href="{{ page.get_absolute_url }}">{{ page.title }}</a></li>
     {% for child in nav.children %}
     <li><a href="{{ child.page.get_absolute_url }}">{{ child.page.title }}</a></li>
     {% endfor %}
