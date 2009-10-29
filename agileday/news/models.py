@@ -24,3 +24,5 @@ class NewsItem(models.Model):
     def __unicode__(self):
         return '%s' % self.title
 
+    class Meta:
+        ordering = ['-publish_date']
