@@ -98,6 +98,19 @@ class Page(models.Model):
         dummy, navnode.children = _child_list(self)
         return root
 
+    def depth(self):
+        """Return the page node depth in page tree"""
+        if self.parent:
+            return 1 + self.parent.depth()
+        else:
+            return 1
+
+    def get_root_page(self):
+        if self.parent:
+            return self.parent.get_root_page()
+        else:
+            return self
+
     class Meta:
         unique_together = ('slug', 'parent')
         ordering = ('nav_order', 'title')
