@@ -207,7 +207,7 @@ h4 {
 	font-size: 12px;
 }
 
-#content a, #content a:visited, #content a:hover {
+a, a:visited, a:hover {
 	color: #595959;
 }
 
@@ -290,6 +290,10 @@ td {
 	border-radius: 10px 0 10px 0; /* future proofing */
 	-khtml-border-radius: 10px 0 10px 0; /* for old Konqueror browsers */
 
+}
+
+td a, td a:visited {
+	color: #001b24;
 }
 
  .break {
