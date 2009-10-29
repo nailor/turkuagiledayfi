@@ -4,11 +4,14 @@
 {% endblock %}
 
 {% block content %}
+{% block submenu %}
 {% with page.get_nav as nav %}
 {% if nav.children %}
 <div id="submenu">
   <ul>
-    <li><a href="{{ page.get_absolute_url }}">{{ page.title }}</a></li>
+    {% with page.get_root_page as root %}
+    <li><a href="{{ root.get_absolute_url }}">{{ root.title }}</a></li>
+    {% endwith %}
     {% for child in nav.children %}
     <li><a href="{{ child.page.get_absolute_url }}">{{ child.page.title }}</a></li>
     {% endfor %}
@@ -16,5 +19,6 @@
 </div>
 {% endif %}
 {% endwith %}
+{% endblock %}
 {{ page.content|safe }}
 {% endblock %}
