@@ -228,7 +228,9 @@ a, a:visited, a:hover {
 }
 
 #footer img {
-  border: 0;
+  border: 3px solid White;
+  border-bottom: 7px solid White;
+  border-top: 6px solid White;
 }
 
 #footer div {
