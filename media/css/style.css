@@ -297,7 +297,7 @@ td {
 td a, td a:visited {
 	color: #001b24;
 }
-
+.keynote { text-align: center; }
  .break {
 	border: 0;
 	text-align: center;
